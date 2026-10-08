@@ -3,6 +3,7 @@ package tn.esprit.autoloc.Entities;
 import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -30,6 +31,15 @@ public class Vehicule {
     @Column(nullable = false, length = 20)
     private StatutVehicule statut;
 
+    @ManyToOne
+    private Agence agence;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Equipement> equipements;
+
+
+    @OneToMany(mappedBy = "vehicule")
+    private Set<Reservation> reservations;
 
 
 }

@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Getter
 @Setter
@@ -24,4 +26,10 @@ public class Agence {
     private String adresse;
 
     private String telephone;
+
+    @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL)
+    private Set<Employe> employes;
+
+    @OneToMany(mappedBy = "agence")
+    private Set<Vehicule> vehicules;
 }
