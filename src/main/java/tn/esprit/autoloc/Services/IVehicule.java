@@ -8,6 +8,6 @@ public interface IVehicule {
     Vehicule addVehicule(Vehicule vehicule);
     void deleteVehicule(Long id);
     Set<Vehicule> retrieveVehicule();
-    Vehicule retrieveById(Long id);
+    Vehicule retrieveVehiculeById(Long id);
     Vehicule updateVehicule(Vehicule vehicule);
 }

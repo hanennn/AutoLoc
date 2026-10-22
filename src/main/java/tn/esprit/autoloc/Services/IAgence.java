@@ -8,7 +8,7 @@ public interface IAgence {
     Agence addAgence(Agence agence);
     void deleteAgence(Long id);
     Set<Agence> retrieveAgence();
-    Agence retrieveById(Long id);
+    Agence retrieveAgenceById(Long id);
     Agence updateAgence(Agence agence);
 
 }

@@ -8,6 +8,6 @@ public interface IEmploye {
     Employe addEmploye(Employe employe);
     void deleteEmploye(Long id);
     Set<Employe> retrieveEmploye();
-    Employe retrieveById(Long id);
+    Employe retrieveEmployeById(Long id);
     Employe updateEmploye(Employe employe);
 }

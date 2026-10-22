@@ -31,7 +31,7 @@ public class ContratServiceImpl implements IContrat {
     }
 
     @Override
-    public Contrat retrieveById(Long id) {
+    public Contrat retrieveContratById(Long id) {
         return contratRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("contrat", id));
     }
 

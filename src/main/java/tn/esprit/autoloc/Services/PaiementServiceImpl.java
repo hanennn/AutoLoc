@@ -31,7 +31,7 @@ public class PaiementServiceImpl implements IPaiement {
     }
 
     @Override
-    public Paiement retrieveById(Long id) {
+    public Paiement retrievePaiementById(Long id) {
         return paiementRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("paiement", id));
     }
 

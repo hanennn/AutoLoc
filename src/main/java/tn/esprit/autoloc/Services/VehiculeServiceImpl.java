@@ -31,7 +31,7 @@ public class VehiculeServiceImpl implements IVehicule {
     }
 
     @Override
-    public Vehicule retrieveById(Long id) {
+    public Vehicule retrieveVehiculeById(Long id) {
         return vehiculeRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("vehicule", id));
     }
 

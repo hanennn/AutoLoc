@@ -7,6 +7,6 @@ public interface IPaiement {
     Paiement addPaiement(Paiement paiement);
     void deletePaiement(Long id);
     Set<Paiement> retrievePaiement();
-    Paiement retrieveById(Long id);
+    Paiement retrievePaiementById(Long id);
     Paiement updatePaiement(Paiement paiement);
 }

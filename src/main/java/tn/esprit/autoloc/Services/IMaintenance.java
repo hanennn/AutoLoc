@@ -7,6 +7,6 @@ public interface IMaintenance {
     Maintenance addMaintenance(Maintenance maintenance);
     void deleteMaintenance(Long id);
     Set<Maintenance> retrieveMaintenance();
-    Maintenance retrieveById(Long id);
+    Maintenance retrieveMaintenanceById(Long id);
     Maintenance updateMaintenance(Maintenance maintenance);
 }

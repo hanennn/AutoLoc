@@ -31,7 +31,7 @@ public class ReservationServiceImpl implements IReservation {
     }
 
     @Override
-    public Reservation retrieveById(Long id) {
+    public Reservation retrieveReservationById(Long id) {
         return reservationRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("reservation", id));
     }
 

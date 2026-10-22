@@ -7,6 +7,6 @@ public interface IClient {
     Client addClient(Client client);
     void deleteClient(Long id);
     Set<Client> retrieveClient();
-    Client retrieveById(Long id);
+    Client retrieveClientById(Long id);
     Client updateClient(Client client);
 }

@@ -31,7 +31,7 @@ public class ClientServiceImpl implements IClient {
     }
 
     @Override
-    public Client retrieveById(Long id) {
+    public Client retrieveClientById(Long id) {
         return clientRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("client", id));
     }
 

@@ -11,6 +11,7 @@ import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
+
 public class MaintenanceServiceImpl implements IMaintenance {
 
     private final MaintenanceRepo maintenanceRepo;
@@ -31,7 +32,7 @@ public class MaintenanceServiceImpl implements IMaintenance {
     }
 
     @Override
-    public Maintenance retrieveById(Long id) {
+    public Maintenance retrieveMaintenanceById(Long id) {
         return maintenanceRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("maintenance", id));
     }
 

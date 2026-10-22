@@ -7,6 +7,6 @@ public interface IContrat {
     Contrat addContrat(Contrat contrat);
     void deleteContrat(Long id);
     Set<Contrat> retrieveContrat();
-    Contrat retrieveById(Long id);
+    Contrat retrieveContratById(Long id);
     Contrat updateContrat(Contrat contrat);
 }

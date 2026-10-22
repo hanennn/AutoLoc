@@ -7,6 +7,6 @@ public interface IReservation {
     Reservation addReservation(Reservation reservation);
     void deleteReservation(Long id);
     Set<Reservation> retrieveReservation();
-    Reservation retrieveById(Long id);
+    Reservation retrieveReservationById(Long id);
     Reservation updateReservation(Reservation reservation);
 }

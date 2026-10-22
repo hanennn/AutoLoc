@@ -7,6 +7,6 @@ public interface IEquipement {
     Equipement addEquipement(Equipement equipement);
     void deleteEquipement(Long id);
     Set<Equipement> retrieveEquipement();
-    Equipement retrieveById(Long id);
+    Equipement retrieveEquipementById(Long id);
     Equipement updateEquipement(Equipement equipement);
 }

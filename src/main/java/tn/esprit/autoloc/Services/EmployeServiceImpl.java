@@ -31,7 +31,7 @@ public class EmployeServiceImpl implements IEmploye {
     }
 
     @Override
-    public Employe retrieveById(Long id) {
+    public Employe retrieveEmployeById(Long id) {
         return employeRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("employe", id));
     }
 

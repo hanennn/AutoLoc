@@ -31,7 +31,7 @@ public class EquipementServiceImpl implements IEquipement {
     }
 
     @Override
-    public Equipement retrieveById(Long id) {
+    public Equipement retrieveEquipementById(Long id) {
         return equipementRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("equipement", id));
     }
 
